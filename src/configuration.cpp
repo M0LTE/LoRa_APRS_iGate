@@ -129,7 +129,7 @@ bool Configuration::readFile() {
         wifiAutoAP.password             = data["wifi"]["autoAP"]["password"] | "1234567890";
         wifiAutoAP.powerOff             = data["wifi"]["autoAP"]["powerOff"] | 10;
 
-        callsign                        = data["callsign"] | "NOCALL-10";
+        callsign                        = data["callsign"] | "N0CALL-11";
         rememberStationTime             = data["other"]["rememberStationTime"] | 30;
 
         beacon.latitude                 = data["beacon"]["latitude"] | 0.0;
@@ -232,7 +232,7 @@ void Configuration::init() {
     wifiAutoAP.password             = "1234567890";
     wifiAutoAP.powerOff             = 15;
 
-    callsign                        = "N0CALL-10";
+    callsign                        = "N0CALL-11";
 
     beacon.comment                  = "LoRa APRS";
     beacon.latitude                 = 0.0;

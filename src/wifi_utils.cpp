@@ -76,6 +76,7 @@ namespace WIFI_Utils {
             unsigned long start = millis();
             displayShow("", "Connecting to Wifi:", "", currentWiFi->ssid + " ...", 0);
             Serial.print("\nConnecting to WiFi '"); Serial.print(currentWiFi->ssid); Serial.println("' ...");
+            WiFi.setHostname("igate");
             WiFi.begin(currentWiFi->ssid.c_str(), currentWiFi->password.c_str());
             while (WiFi.status() != WL_CONNECTED && wifiCounter<myWiFiAPSize) {
                 delay(500);

@@ -1,48 +1,43 @@
 {
-    "callsign": "MB7UTL",
+    "callsign": "NOCALL-10",
     "wifi": {
         "autoAP": {
             "password": "1234567890",
-            "powerOff": 0
+            "powerOff": 10
         },
-        "AP": [
-            {
-                "ssid": "myssid",
-                "password": "mypass"
-            }
-        ]
+        "AP": []
     },
     "beacon": {
-        "latitude": 51.447248,
-        "longitude": -1.0269503,
-        "comment": "439.9125MHz LoRa digi + iGate (125kHz CR4:5 SF12)",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "comment": "LoRa APRS",
         "interval": 15,
-        "overlay": "I",
-        "symbol": "#",
+        "overlay": "L",
+        "symbol": "a",
         "path": "WIDE1-1",
-        "sendViaAPRSIS": true,
-        "sendViaRF": true
+        "sendViaAPRSIS": false,
+        "sendViaRF": false
     },
     "aprs_is": {
-        "active": true,
-        "passcode": "23993",
+        "active": false,
+        "passcode": "XYZVW",
         "server": "rotate.aprs2.net",
         "port": 14580,
         "filter": "m/10",
-        "messagesToRF": true,
-        "objectsToRF": true
+        "messagesToRF": false,
+        "objectsToRF": false
     },
     "digi": {
-        "mode": 3
+        "mode": 0
     },
     "lora": {
-        "rxFreq": 439912500,
-        "txFreq": 439912500,
+        "txFreq": 433775000,
+        "rxFreq": 433775000,
         "spreadingFactor": 12,
         "signalBandwidth": 125000,
         "codingRate4": 5,
         "power": 20,
-        "txActive": true,
+        "txActive": false,
         "rxActive": true
     },
     "display": {
@@ -60,12 +55,12 @@
         "externalSleepVoltage": 10.9,
         "voltageDividerR1": 100.0,
         "voltageDividerR2": 27.0
-    },
+	},
     "bme": {
         "active": false,
         "heightCorrection": 0,
         "temperatureCorrection": 0.0
-    },
+	},
     "syslog": {
         "active": false,
         "server": "192.168.0.100",
@@ -92,5 +87,5 @@
         "rebootMode": false,
         "rebootModeTime": 6
     },
-    "personalNote": "https://ukpacketradio.network/aprs:mb7utl"
+    "personalNote": ""
 }
